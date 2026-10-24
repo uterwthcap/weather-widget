@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="left-side">
+            <div class="top-search-container">
+                <div class="search-top">
+                    <input id="search" placeholder="Search Location..." type="text">
+                    <img class="search-img" src="pic/search.png" alt="search image">
+                </div>  
+            </div>
+            
+
+            <div class="main-data-container">
+                <h1 class="current-temp">16°</h1>
+                <div class="city-and-date">
+                    <h3 class="city">London</h3>
+                    <p class="date">06:09 - Monday, 9 Sep ‘23</p>
+                </div>
+                <img class="img-main-data" src="./pic/cloudy.svg" alt="">
+            </div>
+        </div>
+
+        <div class="right-side">
+            
+            <div class="right-side-container">
+                <div class="search">
+                    <input id="search" placeholder="Search Location..." type="text">
+                    <img class="search-img" src="pic/search.png" alt="search image">
+                </div>
+                
+                <p class="weather-details">Weather Details</p>
+
+                <div class="common-info">
+                    <p class="weather-status">thunderstorm with light drizzle</p>
+
+                    <div class="temp-max-container common-info-container">
+                        <p class="temp-max parameter-text">Temp max</p>
+                        <div class="parameter-value">
+                            <p class="today-temp-max weather-parameter-info">19°</p>
+                            <img src="pic/temp-max.png" alt="temp-max"  class="today-temp-max pic-parameter">
+                        </div>
+                    </div>
+                    
+                    <div class="temp-min-container common-info-container">
+                        <p class="temp-min parameter-text">Temp min</p>
+                        <div class="parameter-value">
+                            <p class="today-temp-min weather-parameter-info">15°</p>
+                            <img src="pic/temp-min.png" alt="temp-min"  class="today-temp-min pic-parameter">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="humadity-container common-info-container">
+                        <p class="humadity parameter-text">Humadity</p>
+                        <div class="parameter-value">
+                            <p class="today-humadity weather-parameter-info">56%</p>
+                            <img src="pic/humadity.png" alt="humadity"  class="today-humadity pic-parameter">
+                        </div>
+                    </div>
+                
+                    <div class="cloudy-conainer common-info-container">
+                        <p class="cloudy parameter-text">Cloudy</p>
+                        <div class="parameter-value">
+                            <p class="today-cloudy weather-parameter-info">86%</p>
+                            <img src="pic/cloudy.png" alt="cloudy" class="today-cloudy pic-parameter">
+                        </div>
+                    </div>
+                    
+                    <div class="wind-container common-info-container">
+                        <p class="wind parameter-text">Wind</p>
+                        <div class="parameter-value">
+                            <p class="today-wind weather-parameter-info">5 km/h</p>
+                            <img src="pic/wind.png" alt="wind" class="today-wind pic-parameter">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="hour-forecast">
+                    <p class="today-weather-details">Today’s Weather Forecast</p>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="twelve-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">00:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="twelve-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="one-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">01:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="one-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="two-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">02:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="two-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="three-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">03:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="three-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="four-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">04:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="four-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="five-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">05:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="five-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="six-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">06:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="six-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="seven-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">07:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="seven-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="eight-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">08:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="eight-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="nine-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">09:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="nine-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="ten-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">10:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="ten-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="eleven-am hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">11:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="eleven-am hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="twelve-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">12:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="twelve-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="one-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">13:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="one-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="two-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">14:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="two-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="three-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">15:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="three-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="four-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">16:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="four-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="five-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">17:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="five-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="six-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">18:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="six-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="seven-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">19:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="seven-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="eight-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">20:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="eight-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="nine-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">21:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="nine-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="ten-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">22:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="ten-pm hour-temp">19°</p>
+                    </div>
+
+                    <div class="weather-hour-info">
+                        <div class="stats-hour-info">
+                            <img src="./pic/snowy.svg" alt="" class="eleven-pm hour-pic">
+                            <div class="hour-stats">
+                                <p class="time">23:00</p>
+                                <p class="weather-status-hour">Snow</p>
+                            </div>
+                        </div>
+                        <p class="eleven-pm hour-temp">19°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

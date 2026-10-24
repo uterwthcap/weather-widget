@@ -459,6 +459,7 @@ body {
         flex-direction: column;
 
         gap: 32px;
+        padding-bottom: 200px;
     }
 
     .today-weather-details {
@@ -736,6 +737,7 @@ body {
         flex-direction: column;
 
         gap: 32px;
+        padding-bottom: 200px;
     }
 
     .today-weather-details {

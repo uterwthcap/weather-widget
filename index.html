@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
     <script src="./js/main.js" defer></script>
@@ -12,12 +13,13 @@
 <body>
     <div class="wrapper">
         <div class="left-side">
-            <div class="top-search-container">
-                <div class="search-top">
-                    <input id="search" placeholder="Search Location..." type="text">
-                    <img class="search-img" src="pic/search.png" alt="search image">
-                </div>  
-            </div>
+            <form class="search top-side-search">
+                <input class="form-search" type="text" placeholder="Search Location...">
+
+                <button class="search-button" type="submit">
+                    <img src="pic/search.png" class="search-img" alt="Search">
+                </button>
+            </form>
             
 
             <div class="main-data-container">
@@ -33,10 +35,13 @@
         <div class="right-side">
             
             <div class="right-side-container">
-                <div class="search">
-                    <input id="search" placeholder="Search Location..." type="text">
-                    <img class="search-img" src="pic/search.png" alt="search image">
-                </div>
+                <form class="search right-side-search">
+                    <input class="form-search" type="text" placeholder="Search Location...">
+
+                    <button class="search-button" type="submit">
+                        <img src="pic/search.png" class="search-img" alt="Search">
+                    </button>
+                </form>
                 
                 <p class="weather-details">Weather Details</p>
 

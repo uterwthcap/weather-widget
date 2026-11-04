@@ -65,22 +65,6 @@ export function updateWeather(data, cityName) {
 
         hourContainer.append(clone);
     }
-    
-    
-        hourTemps.forEach((hourTemp, i) => {
-            
-        });
-
-        hourImgs.forEach((hourImg, i) => {
-            
-        });
-
-        hourWeatherStatuses.forEach((hourWeatherStatus, i) => {
-            });
-
-        hourTime.forEach((time, i) => {
-            
-        });
 }
     
 export function updateClock(timezone) {

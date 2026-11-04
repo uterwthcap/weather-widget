@@ -47,6 +47,9 @@ body {
 .city-and-date {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
 }
 
 .city, .date {
@@ -66,7 +69,8 @@ body {
 
 .img-main-data {
     object-fit: contain;
-    width: 70px;
+    width: 150px;
+    flex-shrink: 0;
     aspect-ratio: 1 / 1;
 }
 
@@ -202,6 +206,13 @@ body {
     padding-bottom: 50px;
 }
 
+.weather-hours {
+    display: flex;
+    flex-direction: column;
+
+    gap: 32px;
+}
+
 .today-weather-details {
     padding: 50px 0 18px 0;
     margin: 0;
@@ -215,13 +226,12 @@ body {
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    gap: 35px;
 }
 
 .hour-pic {
     object-fit: contain;
-    width: 36px;
-    height: 36px;
+    width: 60px;
+    height: 60px;
 
     margin: 0;
     padding: 0;
@@ -230,14 +240,14 @@ body {
 .stats-hour-info {
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 20px;
 }
 
 .hour-stats {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 
     gap: 4px;
     font-size: 18px;
@@ -332,7 +342,7 @@ body {
 
     .img-main-data {
         object-fit: contain;
-        width: 55px;
+        width: 100px;
         aspect-ratio: 1 / 1;
     }
 
@@ -464,6 +474,13 @@ body {
         padding-bottom: 100px;
     }
 
+    .weather-hours {
+        display: flex;
+        flex-direction: column;
+
+        gap: 32px;
+    }
+
     .today-weather-details {
         padding: 50px 0 18px 0;
         margin: 0;
@@ -482,8 +499,8 @@ body {
 
     .hour-pic {
         object-fit: contain;
-        width: 36px;
-        height: 36px;
+        width: 55px;
+        height: 55px;
 
         margin: 0;
         padding: 0;
@@ -492,14 +509,14 @@ body {
     .stats-hour-info {
         display: flex;
         align-items: center;
-        gap: 35px;
+        gap: 15px;
     }
 
     .hour-stats {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
         gap: 4px;
         font-size: 18px;
@@ -595,7 +612,7 @@ body {
 
     .img-main-data {
         object-fit: contain;
-        width: 40px;
+        width: 70px;
         aspect-ratio: 1 / 1;
     }
 
@@ -735,6 +752,13 @@ body {
         padding-bottom: 100px;
     }
 
+    .weather-hours {
+        display: flex;
+        flex-direction: column;
+
+        gap: 32px;
+    }
+
     .today-weather-details {
         padding: 50px 0 18px 0;
         margin: 0;
@@ -755,8 +779,8 @@ body {
 
     .hour-pic {
         object-fit: contain;
-        width: 20px;
-        height: 20px;
+        width: 50px;
+        height: 50px;
 
         margin: 0;
         padding: 0;
@@ -765,14 +789,14 @@ body {
     .stats-hour-info {
         display: flex;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 
     .hour-stats {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
 
         gap: 4px;
         font-size: 14px;
